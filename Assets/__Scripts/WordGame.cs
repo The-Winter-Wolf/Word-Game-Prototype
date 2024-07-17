@@ -233,6 +233,12 @@ public class WordGame : MonoBehaviour
 
     void Update() 
     {
+        // Выйти из приложения
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
+
         // Объявить пару вспомогательных переменных
         Letter ltr;
         char c;
